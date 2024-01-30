@@ -6,15 +6,11 @@ import About from './components/about';
 import Menu from './components/menu';
 //import Segests from './components/segests'
  import SignIn from './components/signIn';
-//import ProfileCard  from './components/new'
-
 import FooterComponent from './components/footer.jsx';
 import RecipeReviewCard from './components/get&take/card.jsx';
  import Cards from './components/get&take/cards.jsx'
 import Profile from './components/Profile/profilePage.jsx';
 import PrimarySearchAppBar from './components/newMenu.jsx'
-// import SignInSide from './components/sign/signIn.jsx'
-// import MyMessege from './components/Profile/myMessege.jsx'
 import AddComment from './components/get&take/addComment.jsx';
 import AddRequest from './components/get&take/addRequest.jsx';
 import AddGood from './components/get&take/addGood.jsx';
@@ -24,8 +20,8 @@ function App() {
   const  dispatch = useDispatch()
   useEffect(() => {  
     document.title = 'By the way';
-    dispatch({ type: 'GET_REQUESTS', id:1 });
-    dispatch({ type: 'GET_REQUESTS', id:2 });
+    dispatch({type:'GET_REQUESTS', id:1});
+    dispatch({type:'GET_REQUESTS', id:2});
     // setCurrentRequest(myRequest)
     // console.log(myRequest);
   }, []);
