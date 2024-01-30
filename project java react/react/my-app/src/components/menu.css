@@ -1,0 +1,19 @@
+/* Navbar.css */
+h2{
+  color: white;
+  font-size: 14;
+}
+ .h2hover:hover{
+    color: red;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    padding: 0;
+  }
+  
+  /* Add more styling as needed */
+  /* @import url("https://fonts.googleapis.com/css?family=Roboto:400,700"); */
+/* @import url("https://fonts.googleapis.com/css?family=Merriweather+Sans:400,400italic"); */
+/* @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"); */
+

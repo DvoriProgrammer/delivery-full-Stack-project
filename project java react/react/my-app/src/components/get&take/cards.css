@@ -1,0 +1,27 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(00px, 1fr));
+    grid-gap: 20px;
+   
+    padding: auto;
+  }
+  .body{
+    background-color:#515151;
+  }
+
+  .cards-container {
+    transition: margin-left 0.1s ease-in-out;
+  }
+  .cards-container.with-filter {
+    margin-left: 310px; /* Adjust the width of your filter bar */
+  }
+  .cards-container.regular {
+    /* Regular card size styles */
+    width: 100%; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    margin: 10px; /* Adjust margin as needed */
+    background-color: #fff; /* Adjust background color as needed */
+    border: 1px solid #ddd; /* Adjust border styles as needed */
+    border-radius: 5px; /* Adjust border-radius as needed */
+  
+  }

@@ -1,0 +1,94 @@
+@charset "UTF-8";
+body{
+	min-height:100vh;
+	display:flex;
+	
+	box-sizing:border-box;
+	font-family:roboto;
+    left: 0;
+    margin-left: 0;
+}
+.container2{
+	position:relative;
+
+	width:100%;
+
+}
+.container2 header{
+	position:relative;
+	font-size:20px;
+	font-weight:600;
+	color:#333;
+}
+.container2 header::before{
+	content:"";
+	position:absolute;
+	left:0;
+
+	background-color:#4070f4;
+	
+}
+.container2 form{
+	position:relative;
+	margin-top:16px;
+	min-height:490px;
+	background-color:#ffff;
+}
+.details personal{
+	margin-top:30px;
+}
+.details ID{
+	margin-top:50px;
+}
+.title1{
+	display:block;
+	margin-bottom:8px;
+	font-size:16px;
+	font-weight:500;
+	margin:6px 0;
+	color:#333;
+}
+.fields1{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	flex-wrap:wrap;
+}
+.input-fields1{
+	display:flex;
+	width:calc(100% /2- 15px);
+	flex-direction:column;
+	margin:4px 0;
+}
+.input-fields1 input{
+	outline:none;
+	font-size:17px;
+	font-weight:400;
+	color:#333;
+	border-radius:5px;
+	border:1px solid #aaa;
+	padding:0 15px;
+	height:42px;
+	margin:8px 0;
+} 
+
+.input-fields1 input[type="date"]:valid{
+	color: #333 ;
+}
+#btn{
+	margin-top:30px;
+}
+#form-second{
+	margin-top:30px;
+}
+#upload{
+	margin-top:30px;
+}
+#copyright{
+	margin-top:10px;
+	text-align:center;
+}
+.divgrid{
+	display:grid;grid-template-columns: auto auto;
+}
+

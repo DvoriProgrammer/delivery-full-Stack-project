@@ -1,0 +1,19 @@
+/* ProfileComponent.css */
+
+.profile-container {
+        text-align: center;
+      }
+      
+      .profile-image {
+        width: 150px; /* או כל גודל שאתה רוצה */
+        height: 150px; /* או כל גודל שאתה רוצה */
+        background-color: #ccc; /* צבע רקע כאשר אין תמונה */
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%; /* עיגול */
+        margin: 0 auto; /* למיקום באמצע העמוד */
+        margin-bottom: 20px; /* יציב את התמונה מלמטה */
+      }
+      
+      /* נוסיף כאן עיצוב נוסף לשאר האלמנטים בקומפוננטה */
+      

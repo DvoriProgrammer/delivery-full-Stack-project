@@ -1,0 +1,56 @@
+/* variables */
+:root {
+    --fab-close-line-length: 1.64rem;
+    --fab-close-line-thickness: 2px;
+    --fab-close-animation-time: 0.3s;
+    --fab-close-spins: 1;
+  }
+  
+  /* button */
+  .fixed-action-btn.spin-close .btn-large {
+    position: relative;
+  }
+  
+  .fixed-action-btn.spin-close .btn-large i {
+    opacity: 1;
+    transition: transform var(--fab-close-animation-time), opacity var(--fab-close-animation-time);
+  }
+  
+  .fixed-action-btn.spin-close .btn-large:before,
+  .fixed-action-btn.spin-close .btn-large:after {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: var(--fab-close-line-length);
+    height: var(--fab-close-line-thickness);
+    background: white;
+    margin-top: -1px;
+    transform-origin: 0 0;
+    transition: transform var(--fab-close-animation-time), opacity var(--fab-close-animation-time);
+  }
+  
+  .fixed-action-btn.spin-close .btn-large:before {
+    margin-left: calc(-1 * var(--fab-close-line-length) / 2);
+    opacity: 0;
+  }
+  
+  .fixed-action-btn.spin-close .btn-large:after {
+    margin-left: calc(-1 * var(--fab-close-line-length) / 2);
+    opacity: 0;
+  }
+  
+  .fixed-action-btn.spin-close.active .btn-large i {
+    opacity: 0;
+  }
+  
+  .fixed-action-btn.spin-close.active .btn-large:before {
+    opacity: 1;
+    transform: rotate(calc((var(--fab-close-spins) * 2 + 1) * 45deg));
+  }
+  
+  .fixed-action-btn.spin-close.active .btn-large:after {
+    opacity: 1;
+    transform: rotate(calc((var(--fab-close-spins) * 2 + 1) * 135deg));
+  }
+  

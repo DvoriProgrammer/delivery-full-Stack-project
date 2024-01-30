@@ -1,0 +1,24 @@
+/* FallingImage.css */
+
+   /* SwingAnimation.css */
+@keyframes falling-image {
+    0% {
+      transform: rotate(1.8deg);
+    }
+    25% {
+      transform: rotate(2deg);
+    }
+   
+    75% {
+      transform: rotate(-2deg);
+    }
+    100% {
+      transform: rotate(1.5deg);
+    }
+  }
+  
+  .falling-image {
+    animation: swing 2.5s ease-in-out infinite;
+  }
+  
+  
