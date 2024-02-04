@@ -19,7 +19,7 @@ const OpenAbout = () => {
       {/* Add your JSX code here, replacing the original HTML */}
       <div ref={tiltRef} className="description">
         <h1 className="title">
-          <span className="gradient-text">Grow Professionally</span> with the Best
+          <span className="gradient-text">Grow Professionally</span>with the Best
         </h1>
         {/* ... Other HTML content */}
       </div>

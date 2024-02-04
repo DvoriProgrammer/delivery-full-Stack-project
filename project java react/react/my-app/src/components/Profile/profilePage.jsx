@@ -15,10 +15,10 @@ const dispatch=useDispatch();
     const handleCheckboxClick = () => {
       setCheckboxVisible(false);
     };
-  //  useEffect(()=>{
-  //   const myUser=useSelector((state)=>(state.user.currntUser))
-  //   dispatch({type: 'CHOOSEN_USER',id: myUser.id})
-  //  })
+  useEffect(()=>{
+   const myUser=useSelector((state)=>(state.user.currntUser))
+     dispatch({type: 'CHOOSEN_USER',id: myUser.id})
+  })
     return (
       <> <ScrollToTopOnMount/>
 <br/><br/><br/>

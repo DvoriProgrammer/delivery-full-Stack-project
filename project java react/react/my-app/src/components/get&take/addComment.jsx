@@ -18,7 +18,6 @@ const AddComment = () => {
     // Perform additional actions here (e.g., save to database, update UI, etc.)
     console.log('Comment:', commentText);
     console.log('Emoji:', emojiInput);
-
     // Close the popup after submitting
     closePopup();
   };
@@ -26,7 +25,7 @@ const AddComment = () => {
   return (
     <div className="comment-container">
       <button onClick={openPopup}>Add Comment</button>
-      {isPopupOpen && (
+      {isPopupOpen&&(
         <div className="comment-popup">
           <textarea
             value={commentText}

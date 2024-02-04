@@ -11,9 +11,9 @@ import ScrollToTopOnMount from "../scroll.jsx";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import GoogleMaps from "./googleMaps/googleMaps.jsx";
-import { useLocation } from "react-router-dom";
+import {useLocation} from "react-router-dom";
 import AlertDialog from "./seccefully.jsx";
 const AddRequest = () => {
   const dispatch = useDispatch();
@@ -37,7 +37,7 @@ const AddRequest = () => {
   //   if (ID ) {
   const location = useLocation();
   const loc = location.state.from;
-  const [isCard, setIsCard] = useState(true);
+  const [isCard,setIsCard] = useState(true);
   // console.log(additionalParams)
 
   // if (loc=="cards")
@@ -46,13 +46,12 @@ const AddRequest = () => {
   //   const vol = false
   useEffect(() => {
     console.log(isCard);
-    if (loc != "cards") {
-      setReq((prevUser) => ({ ...prevUser, category: { id: 2 } }));
+    if (loc!= "cards") {
+      setReq((prevUser) => ({ ...prevUser, category: { id: 2 }}));
     } else {
-      setReq((prevUser) => ({ ...prevUser, category: { id: 1 } }));
+      setReq((prevUser) => ({ ...prevUser, category: { id: 1 }}));
     }
   }, []);
-
   console.log("nnnnnnnnnnn");
   const navigate = useNavigate();
   const adddedddd = () => {
@@ -61,19 +60,21 @@ const AddRequest = () => {
     navigate("/menu/add");
     handleClose();
   };
-  const [req, setReq] = useState({
+
+
+  const [req,setReq] = useState({
     fromWhere: "",
     toWher: "",
-    price: 0,
-    size: 0,
+    price:0,
+    size:0,
     recognaize: "",
-    dateTime: new Date(),
+    dateTime:new Date(),
     requesHour: "",
     userId: {
       id: myUser.id,
     },
     category: {
-      id: isCard ? 1 : 2,
+      id: isCard? 1 : 2,
     },
   });
 
@@ -85,11 +86,9 @@ const AddRequest = () => {
   };
   const [phoneNumber, setPhoneNumber] = useState("");
   const [error, setError] = useState(false);
-
   const handlePhoneNumberChange = (event) => {
     const inputPhoneNumber = event.target.value.replace(/\D/g, ""); // Remove non-numeric characters
     setPhoneNumber(inputPhoneNumber);
-
     // Validate the phone number format
     const isValidPhoneNumber = /^\d{10}$/.test(inputPhoneNumber);
     setError(!isValidPhoneNumber);
@@ -196,7 +195,6 @@ const AddRequest = () => {
                       </div>
                       {/* </div> */}
                       <div className="radio-buttons"></div>
-
                       {showForm && (
                         <>
                           <Box

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Profile from './profilePage.jsx';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -41,9 +41,9 @@ export default function SideLeft(){
 
 
 
-
+ {/* <Profile/> */}
         
       </Card>
-   
+ 
     )
 }

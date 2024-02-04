@@ -12,6 +12,7 @@ import {filterRequest,clearFilter} from '../../redux/reducers/requestSlice.js'
 import FilterAltOffIcon from '@mui/icons-material/FilterAltOff';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import FilterAltIcon from '@mui/icons-material/FilterAlt';
+import ScrollToTopOnMount from '../scroll.jsx';
 const share = [
   {
     name: "dvori",
@@ -73,7 +74,6 @@ const funcFilter=(data)=>{
     const a = filtermyRequest.filter((e) => (e.fromWhere.includes(data.fromWhere)||data.fromWhere.includes(e.fromWhere))&&e.fromWhere!="")
             filtermyRequest=a;
     }
-
    if(data.ToWhere!=null){
     const b = filtermyRequest.filter((e) => (e.ToWhere.includes(data.ToWhere)||data.ToWhere.includes(e.ToWhere))&&e.ToWhere!="");
     filtermyRequest=b;
@@ -145,6 +145,7 @@ const funcFilter=(data)=>{
           zIndex: 999
         }}
       >  */}
+      <ScrollToTopOnMount/>
        <BasicModal  label={"add Requesr"} path={'/menu/addRequest'} prev={'cards'}/>
        <button onClick={cleanFilter} style={{
                 textDecoration: 'none',
@@ -172,9 +173,9 @@ const funcFilter=(data)=>{
           c={true}
         />
    {myUser&&<button style={{
-          textDecoration: 'none',
+          textDecoration:'none',
           fontSize: 17,
-          backgroundColor: 'red',
+          backgroundColor:'red',
           color: 'white',
           padding: '10px 20px',
           position: 'fixed',
@@ -185,8 +186,8 @@ const funcFilter=(data)=>{
         }} onClick={myRequest}><AccountCircleIcon/>my request</button>} 
         <div className={`cards-container ${isFilterVisible?'with-filter' : ''}`}>      
           {r.slice(0)
-  .reverse().map((item, index) => (       
-            <div key={index} style={{ left: '50%' }}>
+           .reverse().map((item, index)=>(       
+            <div key={index} style={{left:'50%'}}>
               <CardSingle pro={item} c={true}  idcard={item.id}/>
             </div>
           ))} 
