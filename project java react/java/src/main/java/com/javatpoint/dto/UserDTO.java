@@ -29,7 +29,6 @@ public class UserDTO {
     public void setId(Long id) {
         this.id = id;
     }
-
     private String password;
     private  String email;
     private  String firstName;

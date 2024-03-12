@@ -1,5 +1,4 @@
 package com.javatpoint.service;
-
 import com.javatpoint.dto.CommentDTO;
 import com.javatpoint.dto.DeliveryDTO;
 import com.javatpoint.dto.UserDTO;
@@ -13,7 +12,6 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Base64;
 import java.util.List;
-
 @Mapper(componentModel = "spring")
 public interface MapStructMapper {
      List<UserDTO> userToDto(List<User> users);
@@ -24,7 +22,6 @@ public interface MapStructMapper {
             userDTO.setDeliverCount(u.getDeliverCount());
             userDTO.setDeliveredCount(u.getDeliveredCount());
             userDTO.setEmail(u.getEmail());
-
             userDTO.setFirstName(u.getFirstName());
             userDTO.setLevel(u.getLevel());
             userDTO.setPassword(u.getPassword());
@@ -37,11 +34,9 @@ public interface MapStructMapper {
             return userDTO;
         }
        return null;
-
     }
     DeliveryDTO todto(Delivery d);
     List<DeliveryDTO> todto2(List<Delivery> d);
-
     CommentDTO todtoComment(Coments d);
     List<CommentDTO> todtoComment2(List<Coments> d);
 }

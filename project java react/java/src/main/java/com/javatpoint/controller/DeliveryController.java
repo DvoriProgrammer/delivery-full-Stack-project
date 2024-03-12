@@ -24,7 +24,6 @@ import java.util.List;
 @RequestMapping("/api/delivery")
 @CrossOrigin
 public class DeliveryController {
-
     private MapStructMapper mapper;
     private DeliveryRepository deliveryRepository;
     private UserRepository userRepository;
@@ -144,7 +143,21 @@ public class DeliveryController {
 
         }
     }
-
-
+//מציגה את המשלוחים שלי שנסרו
+    //@GetMapping("/getRequests/{userId}")
+ //   public ResponseEntity<List<DeliveryDTO>> getMyHistoryRequests(@PathVariable long userId){
+      //  try{
+        //    List<Delivery> deliveries=new ArrayList<>();
+        //    deliveryRepository.findAllByStatus(false).forEach(c->deliveries.remove(c));
+         //   User u= userRepository.findById(userId).orElse(null);
+         //   deliveryRepository.findAllByUserId(userId).forEach(c->deliveries.add(c));
+        //    return new ResponseEntity(mapper.todto2(deliveries), HttpStatus.OK);
+     //   }
+      //  catch (Exception e){
+      //      System.out.println(e);
+       //     return new ResponseEntity<>(null,HttpStatus.INTERNAL_SERVER_ERROR);
+      //  }
+  //  }
+//
 
 }

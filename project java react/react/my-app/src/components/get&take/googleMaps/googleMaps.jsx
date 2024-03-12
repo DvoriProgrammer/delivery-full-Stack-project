@@ -176,7 +176,7 @@ import Typography from '@mui/material/Typography';
 import parse from 'autosuggest-highlight/parse';
 import { debounce } from '@mui/material/utils';
 
-const GOOGLE_MAPS_API_KEY = 'AIzaSyBNVjEXhyDOUvcCECJFY5x_OGKt38dxVBk';
+const GOOGLE_MAPS_API_KEY = 'xxxxxx';
 
 function loadScript(src, position, id) {
   if (!position) {

@@ -42,6 +42,7 @@ export default function BasicModal({person}) {
           {person.firstName} {person.lastName}<br></br><br></br>
            email: {person.email}<br></br><br></br>
            phone:{person.phone}<br></br><br></br>
+           num delivery: {person.deliverCount} 
            {/* count : {person.deliverCount} */}
            {/* {console.log(person.deliverCount)} */}
           </Typography>

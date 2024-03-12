@@ -14,6 +14,6 @@ public interface DeliveryRepository extends JpaRepository<Delivery,Long> {
 //   Delivery findById(long id);
    List<Delivery> findAllByStatus(boolean b);
    List<Delivery> findAllByCategoryId(long id);
-//   List<Delivery> findAllByUserIdId(long id);
+ List<Delivery> findAllByUserId(long id);
    Optional<Delivery> findById(long id);
 }

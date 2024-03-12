@@ -9,7 +9,7 @@ import './index.css';
 import {store} from './redux/store.js';
 import { Provider } from 'react-redux';
 import Layout from './components/Layout.jsx';
-
+//import { GoogleOAuthProvider } from '@react-oauth/google';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
   <Provider store={store}>

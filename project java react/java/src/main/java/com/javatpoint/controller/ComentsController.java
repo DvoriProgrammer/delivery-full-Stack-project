@@ -25,7 +25,6 @@ public class ComentsController{
         this.comentsRepository = comentsRepository;
         this.mapper=mapper;
     }
-
     @GetMapping("/get")
     public List<Coments> getComents(){
         return comentsRepository.findAll();

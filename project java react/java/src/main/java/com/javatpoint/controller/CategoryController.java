@@ -23,7 +23,6 @@ public class CategoryController {
     private CategoryRepository categoryRepository;
 
     @Autowired
-
     public CategoryController(CategoryRepository categoryRepository) {
         this.categoryRepository = categoryRepository;
     }

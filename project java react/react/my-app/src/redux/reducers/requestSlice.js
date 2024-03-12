@@ -23,7 +23,6 @@ export const requestSlice = createSlice({
 
         },
         deleteDelivery: (state,action)=>{
-          
             state.listRequest = state.listRequest.filter(u => u.id !== action.payload.id);
             state.listFromData = state.listFromData.filter(u => u.id !== action.payload.id);
 

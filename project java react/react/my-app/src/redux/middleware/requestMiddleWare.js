@@ -45,8 +45,6 @@ export const postAddRequest = ({ dispatch, getState }) => next => action => {
 export const deleteRequest = ({ dispatch, getState }) => next => action => {
     if (action.type === 'DELETE_REQUEST') {     
         console.log(action.id,action.choosenId)
-      console.log("------------------------------------------------------------------------------------------------")
-        // Perform the asynchronous operation
         axios.put(`http://localhost:8585/api/delivery/update/${action.id}/${action.choosenId.id}`)
             .then((response) => {
                 console.log('response.data',response.data);
@@ -54,9 +52,7 @@ export const deleteRequest = ({ dispatch, getState }) => next => action => {
             })
             .catch((error) => {
                 console.error('Error fetching recipes:',error);
-                // Handle the error as needed
             });
     }
-    // Continue the action through the middleware chain
     return next(action);
  };

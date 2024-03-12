@@ -103,7 +103,6 @@ public class UserController {
             return new ResponseEntity<>(null,HttpStatus.INTERNAL_SERVER_ERROR);
         }
 
-
     }
     @GetMapping("/get/{id}")
     public ResponseEntity<UserDTO> getDTO(@PathVariable long id)  {
